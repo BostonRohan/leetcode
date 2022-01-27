@@ -4,10 +4,10 @@ var isValid = function (s) {
   for (let char of s) {
     //Finds the key (opening bracket), and checks for the corresponding closing bracket
     if (brackets[char]) {
-      //Pushes the closing bracket
+      //Pushes the opening bracket
       arr.push(brackets[char]);
     } else {
-      //Checks the last element of the closing bracket to see if it corresponds to the closing bracket
+      //Checks the last element of the arr to see if it corresponds to the closing bracket
       if (arr.pop() !== char) return false;
     }
   }
