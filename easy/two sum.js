@@ -16,4 +16,3 @@ var twoSum = function (nums, target) {
 
   //Window sliding technique
 };
-console.log(twoSum([15, 20, 30, 7, 4, 12, 0, 50, 100, 1000], 11));

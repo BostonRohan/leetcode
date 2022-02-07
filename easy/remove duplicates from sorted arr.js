@@ -9,4 +9,3 @@ var removeDuplicates = function (nums) {
     i++;
   }
 };
-console.log(removeDuplicates([1, 1, 2]));
