@@ -16,3 +16,21 @@ var twoSum = function (nums, target) {
 
   //Window sliding technique
 };
+
+//Second Solution (10 min timer)
+var twoSum = function (nums, target) {
+  let j = 0;
+  let i = 1;
+
+  while (nums[i] + nums[j] !== target) {
+    if (i == nums.length - 1) {
+      i = j + 1;
+      j++;
+    }
+
+    if (nums[i] + nums[j] === target) return [j, i];
+
+    i++;
+  }
+  return [j, i];
+};
