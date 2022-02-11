@@ -31,3 +31,17 @@ var mergeTwoLists = function (list1, list2) {
   return head.next;
 };
 //https://www.youtube.com/watch?v=orCMI6WjoIw&ab_channel=TerribleWhiteboard
+
+//Second solution (10 min timer)
+function ListNode(val, next) {
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
+}
+
+const mergeTwoLists = (list1, list2) => {
+  while (list1 && list2) {
+    if (list2.val >= list1.val) {
+      list1.next = list2.val;
+    }
+  }
+};
