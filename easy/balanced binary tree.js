@@ -42,3 +42,15 @@ var isBalanced = function (root) {
   height(root);
   return ans;
 };
+
+//Timed solution (10 min)
+const isBalanced = (root) => {
+  let ans = true;
+
+  let left = root.left;
+  let right = root.right;
+
+  if ((!left.left && right.right) || (!right.left && left.right)) ans = false;
+
+  return isBalanced(root.left) && isBalanced(root.right);
+};
