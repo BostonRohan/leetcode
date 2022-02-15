@@ -14,3 +14,19 @@ var inorderTraversal = function (root) {
   }
   return ans;
 };
+
+//Timed solution (10min)
+const inorderTraversal = (root) => {
+  let stack = [];
+  let ans = [];
+
+  while (root) {
+    if (!root.left || !root.right) {
+      root = stack.pop();
+    }
+    stack.push(root.left);
+    stack.push(root.right);
+    ans.push(root.val);
+  }
+  return ans;
+};
