@@ -34,3 +34,21 @@ var minDepth = function (root) {
 //[3]
 
 //breath first search
+
+//timed (10 min)
+var minDepth = (root) => {
+  if (!root) return 0;
+
+  let queue = [root];
+  let depth = 1;
+
+  while (queue.length) {
+    let curr = queue.shift();
+
+    if (!curr.left && !curr.right) return depth;
+
+    if (curr.right) queue.push(curr.right);
+    if (curr.left) queue.push(curr.left);
+  }
+  depth += 1;
+};
