@@ -8,3 +8,16 @@ var maxDepth = function (root) {
 
   return max(root, 0);
 };
+
+//timed (10 min)
+var maxDepth = (root) => {
+  let sum = 0;
+  while (root) {
+    let left = root.left;
+    let right = root.right;
+    while (left && right) {
+      sum++;
+    }
+  }
+  return sum;
+};
