@@ -35,20 +35,23 @@ var minDepth = function (root) {
 
 //breath first search
 
-//timed (10 min)
+//second solution
 var minDepth = (root) => {
-  if (!root) return 0;
+  if (!root) return [];
 
   let queue = [root];
   let depth = 1;
 
-  while (queue.length) {
-    let curr = queue.shift();
+  while (queue[0]) {
+    let len = queue.length;
+    while (len--) {
+      let curr = queue.shift();
 
-    if (!curr.left && !curr.right) return depth;
+      if (!curr.left && !curr.right) return depth;
 
-    if (curr.right) queue.push(curr.right);
-    if (curr.left) queue.push(curr.left);
+      if (curr.left) queue.push(curr.left);
+      if (curr.right) queue.push(curr.right);
+    }
+    depth++;
   }
-  depth += 1;
 };
