@@ -26,6 +26,7 @@
 //push the total at the end of each iteration
 
 //o(n) solution
+//How does this solution follow the bit pattern??
 const countBits = (n) => {
   let dp = new Array(n + 1).fill(0),
     offset = 1;
