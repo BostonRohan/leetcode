@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "checkJs": false,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  }
+}
