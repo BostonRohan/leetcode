@@ -43,7 +43,7 @@ var isBalanced = function (root) {
   return ans;
 };
 
-//Timed solution (10 min)
+// Timed solution (10 min)
 const isBalanced = (root) => {
   let ans = true;
 
