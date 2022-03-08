@@ -1,3 +1,4 @@
+import { TreeNode } from "./type";
 const isBalanced = (root: TreeNode | null): boolean => {
   if (!root) return true;
 
