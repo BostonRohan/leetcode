@@ -1,4 +1,4 @@
-import { TreeNode } from "./type";
+import { TreeNode } from "../ts/type";
 function preorderTraversal(root: TreeNode | null): number[] {
   let ans: number[] = [];
   let stack: TreeNode[] = [root];
