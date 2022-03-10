@@ -1,4 +1,4 @@
-import { TreeNode } from "./type";
+import { TreeNode } from "../ts/type";
 
 function minDepth(root: TreeNode | null): number {
   if (!root) return 0;
